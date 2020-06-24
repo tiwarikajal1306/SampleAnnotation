@@ -17,8 +17,8 @@ public class WriteToCsv {
     private static final String PATH = "src/main/resources/user.csv";
 
     public static void main(String[] args) throws IOException {
-        try {
-            Writer writer = Files.newBufferedWriter(Paths.get(PATH));
+        try   (Writer writer = Files.newBufferedWriter(Paths.get(PATH)))
+        {
             StatefulBeanToCsv<CSVUser> beanToCsv = new StatefulBeanToCsvBuilder(writer)
                     .withQuotechar(CSVWriter.NO_QUOTE_CHARACTER)
                     .build();
