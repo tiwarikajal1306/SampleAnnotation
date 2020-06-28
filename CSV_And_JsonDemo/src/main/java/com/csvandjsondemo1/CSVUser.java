@@ -1,47 +1,36 @@
 package com.csvandjsondemo1;
-
-import com.opencsv.bean.CsvBindByName;
-
+import com.opencsv.bean.CsvBindByPosition;
 public class CSVUser {
-    @CsvBindByName
+    @CsvBindByPosition(position = 2)
     private String name;
-
-    @CsvBindByName(column = "email", required = true)
+    @CsvBindByPosition(position = 1)
     private String email;
-
-    @CsvBindByName(column = "phone")
+    @CsvBindByPosition(position = 3)
     private String phoneNo;
-
-    @CsvBindByName
+    @CsvBindByPosition(position = 0)
     private String country;
-
-    public CSVUser(String name, String email, String phoneNo, String country) {
-        this.name = name;
-        this.email = email;
-        this.phoneNo = phoneNo;
+    public CSVUser(String country, String email, String name, String phoneNo) {
         this.country = country;
+        this.email = email;
+        this.name = name;
+        this.phoneNo = phoneNo;
     }
-
-    public String getName() {
-
+    public String getName()
+    {
         return name;
     }
-
-    public String getEmail() {
-
+    public String getEmail()
+    {
         return email;
     }
-
     public String getPhoneNo()
     {
         return phoneNo;
     }
-
     public String getCountry()
     {
         return country;
     }
-
     @Override
     public String toString() {
         return "CSVUser { " +

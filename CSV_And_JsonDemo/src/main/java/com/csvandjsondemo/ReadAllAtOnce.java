@@ -17,10 +17,10 @@ public class ReadAllAtOnce {
             CSVReader csvReader = new CSVReader(reader);
             List<String[]> records = csvReader.readAll();
             for (String[] record : records) {
-                System.out.println("Name: " + record[0]);
+                System.out.println("Name: " + record[2]);
                 System.out.println("Email: " + record[1]);
-                System.out.println("Phone: " + record[2]);
-                System.out.println("Country: " + record[3] + "\n");
+                System.out.println("Phone: " + record[3]);
+                System.out.println("Country: " + record[0] + "\n");
             }
         } catch (
                 IOException e) {
