@@ -1,4 +1,4 @@
-package com.csvandjsondemo1;
+package com.csvandjsondemo.controller.readcsv;
 import com.opencsv.CSVReader;
 import java.io.IOException;
 import java.io.Reader;

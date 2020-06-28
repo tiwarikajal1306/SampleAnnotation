@@ -1,4 +1,4 @@
-package com.csvandjsondemo1;
+package com.csvandjsondemo.models;
 import com.opencsv.bean.CsvBindByPosition;
 public class CSVUser {
     @CsvBindByPosition(position = 2)

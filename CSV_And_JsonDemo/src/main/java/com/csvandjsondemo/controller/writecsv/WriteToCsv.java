@@ -1,4 +1,5 @@
-package com.csvandjsondemo1;
+package com.csvandjsondemo.controller.writecsv;
+import com.csvandjsondemo.models.CSVUser;
 import com.opencsv.CSVWriter;
 import com.opencsv.bean.StatefulBeanToCsv;
 import com.opencsv.bean.StatefulBeanToCsvBuilder;

@@ -1,4 +1,4 @@
-package com.csvandjsondemo;
+package com.csvandjsondemo.controller.readcsv;
 
 import com.opencsv.CSVReader;
 
